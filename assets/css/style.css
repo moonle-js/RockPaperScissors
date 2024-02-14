@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    color: #F3F8FF;
+}
+body{
+    padding: 2vh 0;
+    width: 100%;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #E6A4B4;
+}
+/* Styles for header */
+header{
+    background: #F3D7CA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1000px;
+    height: 20vh;
+    margin-bottom: 10vh;
+    border-radius: 15px;
+}
+    header h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        height: 40%;
+        font-size: 1.2em;
+    }
+    header p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        text-align: center;
+        height: 40%;
+        width: 100%;
+    }
+/* Styles for main side*/
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1000px;
+    align-items: center;
+    height: 60vh;
+}
+
+/* Styles for both sides */
+    main #userSide, main #computerSide{
+        width: 40%;
+        height: 90%;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+        main #userSide #userInfo, main #computerSide #computerInfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 40%;
+            background: #F3D7CA;
+            border-radius: 15px;
+        }
+            main #userSide #userInfo span, main #computerSide #computerInfo span{
+                color: #3D0C11;
+            }
+/* End of styles for both sides */
+        
+/* User Images Side */
+#userImage, #computerImage{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background: #F3D7CA;
+    border-radius: 15px;
+}
+    #userImage div{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        height: 60%;
+        padding: 5% 0 2% 0;
+        background: #FFF8E3;
+        border-radius: 15px;
+    }
+    #userImage div:hover img{
+        transform: scale(1.3);
+    }
+        #userImage div p{
+            color: #E6A4B4;
+        }
+        #userImage div img{
+            width: 50px;
+            transition: .4s all ease;
+            height: 50px;
+        }
+
+/* VS side */
+#vs{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #vs h2{
+        color: #FFF8E3;
+        font-size: 1.4em;
+    }
+
+/* Computer Image side */
+#computerImage div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 60%;
+    padding: 5% 0 2% 0;
+    background: #FFF8E3;
+    border-radius: 15px;
+}
+    #computerImage div p{
+        color: #E6A4B4;
+    }
+    #computerImage div img{
+        width: 50px;
+        transition: .4s all ease;
+        height: 50px;
+    }
